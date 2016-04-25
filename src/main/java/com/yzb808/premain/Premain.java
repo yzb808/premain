@@ -17,6 +17,6 @@ public class Premain {
 	 * 	例：java -javaagent:MyAgent2.jar=thisIsAgentArgs -jar MyProgram.jar
 	 */
 	public static void premain(String agentArgs, Instrumentation inst) {
-		System.out.println("Hello premain!");
+		System.out.println("Hello premain! Premain's classLoader:" + Premain.class.getClassLoader());
 	}
 }
